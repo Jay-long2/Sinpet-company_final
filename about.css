@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c90f0f;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #020202;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #0d8c44;
+}
+/* solving thw space issue */
+.navbar {
+    margin-bottom: 0;
+  }
+  
+  .image-container {
+    margin-top: 0;
+  }
+/* end */
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    height: 10vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ac1111;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #d8f6df; /* Light green background */
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d8c44;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background-color: #0a6e35;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-hero {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-text .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .about-hero {
+        font-size: 1.5rem;
+    }
+}

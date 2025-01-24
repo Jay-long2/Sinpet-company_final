@@ -1,0 +1,134 @@
+* Contact Page */
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0d8c44;
+}
+
+.contact-section .motivation-note {
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-details,
+.contact-map {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    min-width: 300px;
+    border-radius: 8px;
+}
+
+.contact-details h2,
+.contact-map h2 {
+    color: #0d8c44;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #0d8c44;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-map iframe {
+    border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #0d8c44;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text .btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
